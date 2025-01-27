@@ -24,6 +24,8 @@ docker compose up -d --build
 3. Create a new Symfony project:
 ```bash
 docker compose exec php composer create-project symfony/skeleton .
+docker compose exec php composer require webapp
+docker compose exec php composer require symfony/orm-pack
 ```
 
 4. Set proper permissions:
