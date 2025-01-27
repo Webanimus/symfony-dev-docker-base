@@ -21,9 +21,3 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
 WORKDIR /var/www
-
-# Copy existing application directory
-COPY . /var/www
-
-# Change ownership of our applications
-RUN chown -R www-data:www-data /var/www
